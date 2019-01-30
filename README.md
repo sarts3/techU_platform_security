@@ -65,7 +65,7 @@
     docker run -d --name web-test -p 80:8000 crccheck/hello-world
 ```
 
-### Rachel (https://github.com/zamarrowski/rachel-resources.git)
+### Rachel ( https://github.com/zamarrowski/rachel-resources.git )
 
 ```
     docker-compose up
