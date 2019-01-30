@@ -9,7 +9,8 @@
     git clone https://github.com/dxa4481/truffleHog.git
     cd truffleHog    
     truffleHog --entropy=True https://github.com/dxa4481/truffleHog.git
-    truffleHog --regex --entropy=False https://github.com/dxa4481/truffleHog.git
+    truffleHog --entropy=True ../secrets_demo_repo
+    truffleHog --regex --entropy=False ../secrets_demo_repo
     trufflehog --regex --entropy=False --rules ../rules_truffle.json ../secrets_demo_repo
     trufflehog --regex --entropy=False --rules ../rules_truffle.json --json ../secrets_demo_repo
     
