@@ -1,0 +1,2 @@
+password = {password}
+hash = e86a0c42272354eb332f675af9d55a83ac1995abda038c6f49c99eb3c609eaba
