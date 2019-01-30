@@ -41,7 +41,7 @@
 ```
     git-secrets --install
     ls
-    echo "value: \"apiKey=Mfv80wehJsBHyjnl6ik4S5RrpbEGNcps\"" > secret.md
+    echo "value: \"password=THIS_TEXT_WILL_BE_CHANGED_FOR_ENVIRONMENT_VARIABLE\"" > secret.md
     git status
     git add secret.md
     git commit -m "SECRET"
@@ -50,9 +50,11 @@
 - False Positive
 
 ```
-    git secrets --add --allowed 'Mfv80wehJsBHyjnl6ik4S5RrpbEGNcps'
+    git secrets --add --allowed 'THIS_TEXT_WILL_BE_CHANGED_FOR_ENVIRONMENT_VARIABLE'
     git commit -m "SECRET"
 ```
+
+## SAST Review
 
 ## Docker Images Review
 
