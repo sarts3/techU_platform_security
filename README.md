@@ -56,6 +56,33 @@
 
 ## SAST Review
 
+OWASP TOP 10: https://www.owasp.org/images/5/5e/OWASP-Top-10-2017-es.pdf
+
+### Detección de vulnerabilidades en librerías
+
+```
+git clone https://github.com/OWASP/NodeGoat.git
+cd NodeGoat/; npm install
+npm audit
+npm audit fix
+```
+
+### SAST en PYTHON
+```
+pip install bandit
+git clone https://github.com/Contrast-Security-OSS/DjanGoat.git
+cd DjanGoat
+bandit -r .
+```
+
+### SAST en Javascript
+```
+git clone https://github.com/ajinabraham/NodeJsScan
+cd NodeJsScan
+docker build -t nodejsscan .
+docker run -it -p 9090:9090 nodejsscan
+```
+
 ## Docker Images Review
 
 ### Basic Docker
