@@ -1,0 +1,3 @@
+[submodule "secrets_demo_repo"]
+	path = secrets_demo_repo
+	url = https://github.com/sarts3/secrets_demo_repo.git
