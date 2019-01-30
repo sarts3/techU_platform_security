@@ -68,7 +68,10 @@
 ### Rachel ( https://github.com/zamarrowski/rachel-resources.git )
 
 ```
+    git clone https://github.com/zamarrowski/rachel-resources.git
+    cd rachel-resources
     docker-compose up
-    docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair nginx
-    docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair postgres
+    (on other terminal)
+    docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair nginx | jq
+    docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair postgres | jq
 ```
