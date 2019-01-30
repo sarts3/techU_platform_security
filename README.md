@@ -14,7 +14,7 @@
     trufflehog --regex --entropy=False --rules ../rules_truffle.json --json ../secrets_demo_repo
     
 
-### git-secrets (https://github.com/awslabs/git-secrets)
+### git-secrets ( https://github.com/awslabs/git-secrets )
     
 - Installation
 
@@ -55,12 +55,18 @@
 ```
 
 ## Docker Images Review
-docker run hello-world
-docker run -d --name web-test -p 80:8000 crccheck/hello-world
 
+### Basic Docker
 
-RACHEL (https://github.com/zamarrowski/rachel-resources.git)
+```
+    docker run hello-world
+    docker run -d --name web-test -p 80:8000 crccheck/hello-world
+```
 
-docker-compose up
-docker run -v `pwd`/yair/config/:/opt/yair/config/:ro  yfoelling/yair nginx
-docker run -v `pwd`/yair/config/:/opt/yair/config/:ro  yfoelling/yair postgres
+### Rachel (https://github.com/zamarrowski/rachel-resources.git)
+
+```
+    docker-compose up
+    docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair nginx
+    docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair postgres
+```
