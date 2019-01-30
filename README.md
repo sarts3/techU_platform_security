@@ -1,10 +1,19 @@
 
 # TechU: Platform security 
 
+## Setup
+
+```
+    git clone https://github.com/sarts3/techU_platform_security.git
+    cd techU_platform_security/secrets_demo_repo
+    git submodule init
+    git submodule update
+    cd ..
+```
+
 ## Secret Review
 
 ### Truffelhog ( https://github.com/dxa4481/truffleHog )
-
 
     git clone https://github.com/dxa4481/truffleHog.git
     cd truffleHog    
