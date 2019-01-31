@@ -81,7 +81,7 @@ npm audit fix
 cd ..
 ```
 
-NOTA(Solo en caso de fallo): Si falla en algún punto el npm intentar actualizar con los siguientes comandos: 
+**NOTA(Solo en caso de fallo):** Si falla en algún punto el npm intentar actualizar con los siguientes comandos: 
 
 ```
 echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
@@ -92,7 +92,7 @@ cd ~/node-latest-install
 curl http://nodejs.org/dist/node-latest.tar.gz | tar xz --strip-components=1
 ./configure --prefix=$HOME/local
 make install
-curl -L https://www.npmjs.com/install.sh | sh
+curl -L https://www.npmjs.com/install.sh | sh (si da fallos de locale ejecutar antes --> export LC_ALL=en_US.UTF-8)
 ```
 
 ### SAST en PYTHON
@@ -108,8 +108,9 @@ cd ..
 ```
 git clone https://github.com/ajinabraham/NodeJsScan
 cd NodeJsScan
-docker build -t nodejsscan .
+docker build -t nodejsscan . (si no hay permisos para ejecutar docker, pedirlos al administrador)
 docker run -it -p 9090:9090 nodejsscan
+Probar nodejsscan en el navegador con localhost:9090
 cd ..
 ```
 
@@ -127,9 +128,14 @@ docker run -d --name web-test -p 80:8000 crccheck/hello-world
 ```
 git clone https://github.com/zamarrowski/rachel-resources.git
 cd rachel-resources
+docker-compose up (si no funciona se necesitan permisos de administrador para instalar docker-compose)
+(press ctrl +c to stop after some seconds)
 docker-compose up
-(on other terminal)
-docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair nginx | jq
-docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair postgres | jq
+```
+
+On other terminal on the same path
+```
+docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair nginx | jq (if jq is not installed, just remove '| jq')
+docker run -v `pwd`/yair/config/:/opt/yair/config/:ro yfoelling/yair postgres (if jq is not installed, just remove '| jq')
 ```
 
