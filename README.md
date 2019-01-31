@@ -22,7 +22,6 @@ trufflehog --entropy=True secrets_demo_repo
 trufflehog --regex --entropy=False secrets_demo_repo
 trufflehog --regex --entropy=False --rules rules_truffle.json secrets_demo_repo
 trufflehog --regex --entropy=False --rules rules_truffle.json --json secrets_demo_repo
-cd ..
 ``` 
 
 ### git-secrets ( https://github.com/awslabs/git-secrets )
