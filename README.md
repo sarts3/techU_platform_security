@@ -90,7 +90,7 @@ npm audit está sólo disponible desde la versión npm@6, por tanto, para actual
 npm install npm@latest -g
 ```
 
-En caso de que siga fallando, instarlo node y npm ejecutando los siguiente comandos:
+En caso de que siga fallando, instalar node y npm ejecutando con los siguiente comandos:
 
 ```
 echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
