@@ -79,8 +79,18 @@ npm audit
 npm audit fix
 cd ..
 ```
+Sobre npm audit: https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities
+Sobre npm audit como cli: https://docs.npmjs.com/cli/audit
 
 **NOTA(Solo en caso de fallo):** Si falla en algún punto el npm intentar actualizar con los siguientes comandos: 
+
+npm audit está sólo disponible desde la versión npm@6, por tanto, para actualizar:
+
+```
+npm install npm@latest -g
+```
+
+En caso de que siga fallando, instarlo node y npm ejecutando los siguiente comandos:
 
 ```
 echo 'export PATH=$HOME/local/bin:$PATH' >> ~/.bashrc
